@@ -5,7 +5,7 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer ~= nil and game.Players.LocalPlayer.Character ~= nil
 local plr = game.Players.LocalPlayer
 local dung = {7220975160,7220986579}
-getgenv().amount = 10 -- lower this if ur lagging
+getgenv().amount = 20 -- lower this if ur lagging
 
 if not table.find(dung,game.PlaceId) then
     game:GetService("TeleportService"):Teleport(dung[math.random(1,#dung)])
